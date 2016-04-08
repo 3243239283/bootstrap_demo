@@ -17,6 +17,45 @@
   </head>
   <body>
     <div class="container">
+      <!--选项卡示例-->
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#home" data-toggle="tab">首页</a></li>
+        <li class=""><a href="#profile" data-toggle="tab">个人资料</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown" data-toggle="dropdown">我的书籍<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a data-toggle="tab" href="#dropdown1">1111</a></li>
+            <li><a data-toggle="tab" href="#dropdown2">2222</a></li>
+            <li><a data-toggle="tab" href="#dropdown3">3333</a></li>
+            <li><a data-toggle="tab" href="#dropdown4">4444</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div id="home" class="tab-pane fade active in">
+          <p>单击首页时显示该区域</p>
+          <!-- 进度条组件 -->
+          <div class="progress progress-striped active">
+            <div class="progress-bar" style="width:45%;"><span class="sr-only">45%</span></div>
+          </div>
+        </div>
+        <div id="profile" class="tab-pane fade">
+          <p>单击个人资料时显示该区域</p>
+          <!-- 警告框组件 -->
+          <div class="alert alert-warning">
+             <a href="#" class="close" data-dismiss="alert">
+                &times;
+             </a>
+             <strong>警告！</strong>您的网络连接有问题。
+          </div>
+        </div>
+        <div id="dropdown1" class="tab-pane fade"><p>111txt</p></div>
+        <div id="dropdown2" class="tab-pane fade"><p>222txt</p></div>
+        <div id="dropdown3" class="tab-pane fade"><p>333txt</p></div>
+        <div id="dropdown4" class="tab-pane fade"><p>444txt</p></div>
+      </div>
+
+      <!-- 栅格化布局示例 -->
     	<div class="row">
   			<div class="col-md-4">4</div>
   			<div class="col-md-4">4</div>
@@ -41,6 +80,14 @@
   				</div>
   			</div>
   		</div>
+
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">col-xs-6 col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">col-xs-6 col-sm-3</div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-3">col-xs-6 col-sm-3</div>
+        <div class="col-xs-6 col-sm-3">col-xs-6 col-sm-3</div>
+      </div>
 
     </div>
     <!-- 引入require模块，关联../js/index.js -->

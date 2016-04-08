@@ -8,7 +8,6 @@ require(['jquery','bootstrap'], function (){
     	alert('22');
     });
 
-
 });
 
 
