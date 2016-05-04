@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>Bootstrap 101 Template</title>
+    <title>Bootstrap</title>
     <!-- Bootstrap -->
     <link href="../module/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- HTML5的垫片和respond.js IE8支持HTML5元素和媒体查询 -->
@@ -16,6 +16,40 @@
     <![endif]-->
   </head>
   <body>
+  <header>
+    <!--navbar-toggle样式用于收缩的内容，即nav-collapse collapse样式坐在的元素-->
+    <div class="navbar-header navbar-inverse">
+      <button type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" class="navbar-toggle">
+        <span class="sr-only">toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-responsive-collapse navbar-inverse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">主页</a></li>
+        <li><a href="#">作品</a></li>
+        <li><a href="#">图书</a></li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉菜单<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">子菜单1</a></li>
+            <li><a href="#">子菜单2</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header><!-- /header -->
+
+    <ul class="breadcrumb">
+      <li><a href="#">面包屑导航</a></li>
+      <li><a href="#">library</a></li>
+      <li><a href="#">data</a></li>
+    </ul>
+
     <div class="container">
       <!--选项卡示例-->
       <ul class="nav nav-tabs">
@@ -38,7 +72,143 @@
           <div class="progress progress-striped active">
             <div class="progress-bar" style="width:45%;"><span class="sr-only">45%</span></div>
           </div>
+          <label class="label label-default">Default</label>
+          <label class="label label-primary">primary</label>
+          <label class="label label-success">success</label>
+          <label class="label label-warning">warning</label>
+          <label class="label label-danger">danger</label>
+          <label class="label label-info">info</label>
+          <a href="#">index<span class="badge">42</span></a>
+          
+          <!-- 大屏幕展播 -->
+          <div class="jumbotron">
+            <h1>大屏幕展播!</h1>
+            <p>...</p>
+            <p><a href="#" class="btn btn-primary btn-large">了解更多</a></p>
+          </div>
+          <!-- 页面标题 -->
+          <div class="page-header">
+            <h1>缩略图<small>提示</small></h1>
+          </div>
+          <!-- 缩略图 -->
+          <div class="row">
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="thumbnail"><img src="../images/10yuan.png" alt=""></a>
+              <div class="caption">
+                <h3>thumbnail label</h3>
+                <p>...</p>
+                <p>
+                  <a href="#" class="btn btn-primary">Action</a>
+                  <a href="#" class="btn btn-default">Action</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="thumbnail"><img src="../images/10yuan.png" alt=""></a>
+              <div class="caption">
+                <h3>thumbnail label</h3>
+                <p>...</p>
+                <p>
+                  <a href="#" class="btn btn-primary">Action</a>
+                  <a href="#" class="btn btn-default">Action</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="thumbnail"><img src="../images/10yuan.png" alt=""></a>
+              <div class="caption">
+                <h3>thumbnail label</h3>
+                <p>...</p>
+                <p>
+                  <a href="#" class="btn btn-primary">Action</a>
+                  <a href="#" class="btn btn-default">Action</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <a href="#" class="thumbnail"><img src="../images/10yuan.png" alt=""></a>
+              <div class="caption">
+                <h3>thumbnail label</h3>
+                <p>...</p>
+                <p>
+                  <a href="#" class="btn btn-primary">Action</a>
+                  <a href="#" class="btn btn-default">Action</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 警告框 -->
+          <div class="alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert">&times</button>
+            <strong>警告框</strong><a class="alert-link">查看详情...</a>
+          </div>
+          <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">&times</button>
+            <strong>警告框</strong>
+          </div>
+          <div class="alert alert-info">
+            <button type="button" class="close" data-dismiss="alert">&times</button>
+            <strong>警告框</strong>
+          </div>
+          <!-- 进度条 -->
+          <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+            </div>
+          </div>
+          <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-success" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+            </div>
+          </div>
+          <div class="progress progress-striped active">
+            <div class="progress-bar progress-bar-success" style="width: 60%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%
+              <span class="sr-only">60%</span>
+            </div>
+          </div>
+          <div class="progress progress-striped">
+            <div class="progress-bar progress-bar-info" style="width: 35%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">35%
+            </div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">20%
+            </div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%;" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">10%
+            </div>
+          </div>
+          <!-- 媒体对象 -->
+          <div class="media">
+            <a href="#" class="pull-left"><img src="../images/2.png" class="media-object" alt=""></a>
+            <div class="media-body">
+              <h4 class="media-heading">媒体标题</h4>
+              <div class="media">
+                内容...
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <a href="#" class="pull-right"><img src="../images/2.png" class="media-object" alt=""></a>
+            <div class="media-body">
+              <h4 class="media-heading">媒体标题</h4>
+              <div class="media">
+                内容...
+              </div>
+            </div>
+          </div>
+          <!-- 列表组 -->
+          <ul class="list-group">
+            <li class="list-group-item list-group-item-success active">111<span class="badge">14</span></li>
+            <li class="list-group-item">222<span class="glyphicon glyphicon-chevron-right"></li>
+            <li class="list-group-item">333</li>
+            <li class="list-group-item">444</li>
+            <li class="list-group-item">555</li>
+          </ul>
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-success active">111<span class="badge">14</span></a>
+            <a href="#" class="list-group-item">222<span class="badge">14</span></a>
+            <a href="#" class="list-group-item">333<span class="badge">14</span></a>
+            <a href="#" class="list-group-item">444<span class="badge">14</span></a>
+            <a href="#" class="list-group-item">555<span class="badge">14</span></a>
+          </div>
+
         </div>
+
         <div id="profile" class="tab-pane fade">
           <p>单击个人资料时显示该区域</p>
           <!-- 警告框组件 -->
@@ -48,11 +218,54 @@
              </a>
              <strong>警告！</strong>您的网络连接有问题。
           </div>
+          <!-- 面板 -->
+          <div class="panel panel-default">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
+
+          
+          <div class="panel panel-success">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
+          
+          <div class="panel panel-warning">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
+          
+          <div class="panel panel-danger">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
+          
+          <div class="panel panel-info">
+            <div class="panel-heading">面板头部</div>
+            <div class="panel-body">这里是面板内容</div>
+            <div class="panel-footer">面板footer</div>
+          </div>
         </div>
-        <div id="dropdown1" class="tab-pane fade"><p>111txt</p></div>
-        <div id="dropdown2" class="tab-pane fade"><p>222txt</p></div>
-        <div id="dropdown3" class="tab-pane fade"><p>333txt</p></div>
-        <div id="dropdown4" class="tab-pane fade"><p>444txt</p></div>
+        <div id="dropdown1" class="tab-pane fade">
+          <!-- 洼地 -->
+          <div class="well">
+            <p>内容。。。</p>
+            <blockquote>注意，这里是引用内容！</blockquote>
+          </div>
+        </div>
+        <div id="dropdown2" class="tab-pane fade"><p>我的书籍222txt</p></div>
+        <div id="dropdown3" class="tab-pane fade"><p>我的书籍333txt</p></div>
+        <div id="dropdown4" class="tab-pane fade"><p>我的书籍444txt</p></div>
       </div>
 
       <!-- 栅格化布局示例 -->
