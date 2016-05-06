@@ -51,6 +51,25 @@
     </ul>
 
     <div class="container">
+      <!-- 旋转轮播 -->
+      <div id="carousel-container" class="carousel slide" data-ride="carousel">
+        <!--图片容器-->
+        <div class="carousel-inner">
+          <div class="item active"><img src="../images/1.jpg" alt="1"></div>
+          <div class="item"><img src="../images/2.jpg" alt="2"></div>
+          <div class="item"><img src="../images/3.jpg" alt="3"></div>
+        </div>
+        <!--圆圈指示符-->
+        <ol class="carousel-indicators">
+          <li data-slide-to="0" data-target="#carousel-container" class="active"></li>
+          <li data-slide-to="1" data-target="#carousel-container"></li>
+          <li data-slide-to="2" data-target="#carousel-container"></li>
+        </ol>
+        <!--左右控制按钮-->
+        <a data-slide="prev" href="#carousel-container" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a data-slide="next" href="#carousel-container" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+
       <!--选项卡示例-->
       <ul class="nav nav-tabs">
         <li class="active"><a href="#home" data-toggle="tab">首页</a></li>
@@ -255,6 +274,16 @@
             <div class="panel-body">这里是面板内容</div>
             <div class="panel-footer">面板footer</div>
           </div>
+          <!-- 折叠 1、默认展开 2、默认折叠-->
+          <button class="btn btn-danger" data-toggle="collapse" data-target="#demo">触发按钮</button>
+          <div id="demo" class="collapse in">内容区域</div>
+
+          <button class="btn btn-danger collapsed" data-toggle="collapse" data-target="#demo2">触发按钮</button>
+          <div id="demo2" class="collapse">内容区域</div>
+
+
+
+
         </div>
         <div id="dropdown1" class="tab-pane fade">
           <!-- 洼地 -->
@@ -263,7 +292,7 @@
             <blockquote>注意，这里是引用内容！</blockquote>
           </div>
         </div>
-        <div id="dropdown2" class="tab-pane fade"><p>我的书籍222txt</p></div>
+        <div id="dropdown2" class="tab-pane fade"><p>我的书籍222txt</p></div>   
         <div id="dropdown3" class="tab-pane fade"><p>我的书籍333txt</p></div>
         <div id="dropdown4" class="tab-pane fade"><p>我的书籍444txt</p></div>
       </div>
