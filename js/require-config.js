@@ -1,9 +1,10 @@
 require.config({
 	paths:{
 		'jquery':'../module/jq/jquery',
-		'bootstrap':'../module/bootstrap/js/bootstrap'
-		//css文件的定义方法
-        /*"layercss": "../moudle/layer/skin/layer"*/				//异步请求layer插件需要的layer.css文件
+		'bootstrap':'../module/bootstrap/js/bootstrap',
+        'fullpage':'http://cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage',
+        'fullpagecss':'http://cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage',
+        'stylecss':'../css/style'
 	},
 	map: {
         '*': {
@@ -15,6 +16,10 @@ require.config({
         "bootstrap":{
             deps:['jquery'],
             exports:"bootstrap"
+        },
+        "fullpage":{
+            deps:['jquery'],
+            exports:"fullpage"
         }
     }
 });
