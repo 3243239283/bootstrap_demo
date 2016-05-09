@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fullpage</title>
+</head>
+<body>
+	<ul id="fullpageMenu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">section1</a></li>
+		<li data-menuanchor="page2"><a href="#page2">section2</a></li>
+		<li data-menuanchor="page3"><a href="#page3">section3</a></li>
+		<li data-menuanchor="page4"><a href="#page4">section4</a></li>
+	</ul>
+	<div id="fullpage">
+		<div class="section section1">111</div>
+		<div class="section section2">
+			<div class="slide">222-1</div>
+			<div class="slide">222-2</div>
+			<div class="slide">222-3</div>
+		</div>
+		<div class="section section3">333</div>
+		<div class="section section4">444</div>
+	</div>
+
+	<!-- 引入require模块，关联../js/index.js -->
+    <script src="../module/requirejs/require.js" data-main="../js/full"></script>
+    <!-- 单独定义插件模块插件js源 -->
+    <script src="../js/require-config.js"></script>
+</body>
+</html>

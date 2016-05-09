@@ -4,6 +4,8 @@ require.config({
 		'bootstrap':'../module/bootstrap/js/bootstrap',
         'fullpage':'http://cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage',
         'fullpagecss':'http://cdn.bootcss.com/fullPage.js/2.7.8/jquery.fullPage',
+        'slimscroll':'https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.7/jquery.slimscroll',
+        'move':'https://cdnjs.cloudflare.com/ajax/libs/move.js/0.5.0/move',
         'stylecss':'../css/style'
 	},
 	map: {
